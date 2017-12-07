@@ -1,0 +1,144 @@
+extends layout
+
+block content
+    #show
+    #screen_one
+        .filter
+
+    #screen_two
+        .screen_two_mask
+            .section
+                .content
+                    .logo 
+                    .wh1 相信所託 共創榮景
+                    .wh4 身處於瞬息萬變的資訊科技時代,選擇聰明的委外服務,將創造企業的最大財富
+                    .wbtn
+                        .wh3 
+                            a(href='#start') 了解我們
+                .mouse_note
+        #start.screen_two_content
+            .title
+                .section
+                    .container
+                        .line1
+                        .wh1 公司介紹
+                        .line2
+            .info_one
+                .section
+                    .container
+                        .row
+                            .col-lg
+                                .one(style="background-image: url(../images/info_img.svg);") 
+                            .col-lg
+                                .two
+                                    .icon(style="background-image: url(../images/info_icon.svg);") 
+                                    .wh2 關於我們
+                                    .wh4 雲峯國際為台灣的專業委外服務科技公司，我們具備有整合專案流程管理、營運績效管理及維運經驗，並提供跨國及各產業的品牌客戶服務管理。
+                                    .wbtn 
+                                        .wh3 了解更多
+                .section
+                    .container
+                        .whr
+                .section
+                    .container
+                        .row
+                            .col-lg
+                                .two
+                                    .icon(style="background-image: url(../images/service_icon.svg);")
+                                    .wh2 服務項目
+                                    .wh4 雲峯國際提供專業顧問服務，也提供高度獨特差異客製化的企業運營整體規劃支持服務，是企業主最佳的委外運營顧問與合作夥伴。
+                                    .wbtn 
+                                        .wh3 了解更多
+                            .col-lg
+                                .one(style="background-image: url(../images/service_img.svg);") 
+                .section
+                    .container
+                        .whr
+                .section
+                    .container
+                        .row
+                            .col-lg
+                                .one(style="background-image: url(../images/joing_img.svg);") 
+                            .col-lg
+                                .two
+                                    .icon(style="background-image: url(../images/joing_icon.svg);")
+                                    .wh2 加入我們
+                                    .wh4 我們把員工作為公司最珍貴的資產，希望大家不只是同事，更是夥伴，雲峯國際重視的是 "團隊合作"所能創造的無比力量!
+                                    .wbtn 
+                                        .wh3 了解更多
+            .screen_thr_content
+                    .title
+                        .section
+                            .container
+                                .line1
+                                .wh1 虛位以待
+                                .line2
+                    .interduce
+                        .container
+                            .wh4 我們擁有強大的開發能力，專業人員一直是雲峯最重要的組成，如果您發現適合您的崗位，或是符合您的專業資質，歡迎您給我們來信。
+                    .job
+                        .section
+                            .container
+                                .row
+                                    .col-6.col-md-3
+                                        .detail.one
+                                            .wh5 客服部
+                                            .jobtext.counter 9
+                                            .wh5 個職缺
+                                    .col-6.col-md-3 
+                                        .detail.two
+                                            .wh5 技術部
+                                            .jobtext.counter 5
+                                            .wh5 個職缺
+                                    .col-6.col-md-3
+                                        .detail.thr
+                                            .wh5 設計部
+                                            .jobtext.counter 4
+                                            .wh5 個職缺
+                                    .col-6.col-md-3
+                                        .detail.four
+                                            .wh5 產品部
+                                            .jobtext.counter 7
+                                            .wh5 個職缺
+                                    script.
+                                        $('.counter').countUp();
+                                .wbtn 
+                                    .wh3(onclick="window.open('https://www.104.com.tw/jobbank/custjob/index.php?r=cust&j=5d3d456e3739416a33353d663b41391c92c2c2c2b435f412654j00', '_blank')") 訪問104人力銀行
+                                    
+            .screen_four_content
+                    .title
+                        .section
+                            .container
+                                .line1
+                                .wh1 聯絡我們
+                                .line2
+                    .contact
+                        .section
+                            .container
+                                .row
+                                    .col-lg
+                                        .detail.one
+                                            .icon(style="background-image: url(../images/contact_adr.svg);") 
+                                            .title 
+                                                .wh2 地址
+                                            .order
+                                                .wh4 台北市內湖區基湖路一號4樓
+                                    .col-lg
+                                        .detail.one
+                                            .icon(style="background-image: url(../images/contact_mail.svg);") 
+                                            .title 
+                                                .wh2 電子信箱
+                                            .order
+                                                .wh4 台北市內湖區基湖路一號4樓
+                                    .col-lg
+                                        .detail.one
+                                            .icon(style="background-image: url(../images/contact_phone.svg);") 
+                                            .title 
+                                                .wh2 聯絡資訊
+                                            .order
+                                                .wh4 
+                                                    | TEL：+886-2-8751-8808
+                                                    br
+                                                    | FAX：+886-2-8751-9828
+                                                    
+    include ./footer.jade

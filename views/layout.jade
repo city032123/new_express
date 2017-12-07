@@ -1,0 +1,46 @@
+doctype html
+html
+  head
+    title= title
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='/stylesheets/main.css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css')
+    
+    script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js')
+    script(src='https://code.jquery.com/jquery-1.12.4.min.js')
+    
+    
+    script(src='javascripts/jquery.nicescroll.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js')
+    script(src='javascripts/jquery.countup.min.js')
+    script(src='javascripts/jquery.countup.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js')
+    
+    script(src='javascripts/main.js')
+  body
+    #navbar.fixed-top.section.navbg
+      .container
+        .wnavbar
+            .wlink.logo 
+            .wlink.thr 
+                .wh4 
+                    a(href='#joing') 加入我們
+            .wlink.two 
+                .wh4 
+                    a(href='#servce') 服務項目
+            .wlink.one 
+                .wh4 
+                    a(href='#about') 關於我們
+            #moblie_icon.dropbtn(onclick='myFunction()')
+            #myDropdown.dropdown-content
+                .wh4
+                    a(href='#about') 關於我們
+                .wh4
+                    a(href='#servce') 服務項目
+                .wh4
+                    a(href='#joing') 加入我們
+
+    block content
+

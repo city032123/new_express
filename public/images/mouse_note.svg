@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="116px" viewBox="0 0 34 116" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 23</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-Copy-2" transform="translate(-704.000000, -652.000000)">
+            <g id="Group-23" transform="translate(706.000000, 652.000000)">
+                <g id="Group-9" fill-rule="nonzero" fill="#FFFFFF">
+                    <polygon id="Triangle" transform="translate(15.000000, 14.428134) scale(-1, -1) translate(-15.000000, -14.428134) " points="15 5.91547595 28.7137606 28.7717436 31.2862394 27.2282564 15 0.0845240526 -1.28623939 27.2282564 1.28623939 28.7717436"></polygon>
+                    <polygon id="Triangle" transform="translate(15.000000, 6.928134) scale(1, -1) translate(-15.000000, -6.928134) " points="15 5.91547595 19.7137606 13.7717436 22.2862394 12.2282564 15 0.0845240526 7.71376061 12.2282564 10.2862394 13.7717436"></polygon>
+                </g>
+                <g id="color/29ABE2" transform="translate(14.000000, 40.000000)" fill="#29ABE2">
+                    <rect id="Rectangle" x="0" y="0" width="2" height="76"></rect>
+                </g>
+                <polygon id="Triangle-2" fill="#FFFFFF" points="15 91 30 116 0 116"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,468 @@
+//-----------------------------全頁配置
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Helvetica, Tahoma, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", STXihei, "Microsoft YaHei", SimHei, "WenQuanYi Micro Hei";
+}
+
+//-----------------------------文字配置
+.wh5{
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: 200;
+}
+.wh4{
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-weight: 200;
+}
+.wh2{
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: 200;
+}
+.wh3{
+    letter-spacing: 2px;
+    font-size: 16px;
+    font-weight: 200;
+}
+.wh1{
+    letter-spacing: 2px;
+    font-size: 36px;
+    font-weight: 200;
+}
+
+
+//-----------------------------色彩配置
+$color-white: #fff;
+$color-darkblue: #000A1A; 
+$color-blue: #29ABE2; 
+$color-gray: #D8D8D8; 
+$color-black: #444444; 
+$color-darkgray: #7B7B7B; 
+$color-ligthgray: #FAFAFA; 
+
+
+//-----------------------------通用div
+.section{
+    width: 100%;
+}
+.wbtn{
+    cursor: pointer;
+    box-sizing: content-box;
+    height: 40px; 
+    border-radius: 100px;
+    text-align: center;
+}
+.title{
+        .line1{
+        white-space: nowrap;
+        display: inline-block;
+        height: 2px;
+        width: 30%;
+        background-color: $color-gray;
+        margin-bottom: 15px;
+            @media screen and (max-width: 991px){
+                margin-bottom: 10px;
+                width: 20%;
+            }
+        }
+        .wh1{
+        white-space: nowrap;
+        display: inline-block;
+        color: $color-black;
+        width: 40%;
+        text-align: center;
+            @media screen and (max-width: 991px){
+                width: 60%;
+                font-weight: 400;
+                font-size: 25px;
+            }
+        }
+        .line2{
+        white-space: nowrap;
+        display: inline-block;
+        height: 2px;
+        width: 30%;
+        background-color: $color-gray;
+        margin-bottom: 15px;
+            @media screen and (max-width: 991px){
+                margin-bottom: 10px;
+                width: 20%;
+            }
+        }
+    }
+//-----------------------------導航列
+.show {
+    display:block !important;
+}
+.showbg {
+    background-color: rgba(0,10,26,0.7)!important;
+}
+.nav_swich {
+    background-image: url(../images/mobile_close_icon.svg)!important;
+}
+.navbg{
+    z-index: 3;
+    transition: 0.1s;
+    background-color: rgba(0,0,0,0.0);
+    -webkit-backdrop-filter: blur(15px); /* Safari for macOS & iOS*/
+	backdrop-filter: blur(15px); /* Google Chrome */
+    .wlink{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        display: inline-block;
+        @media screen and (max-width: 991px){
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+    }
+    .logo{
+        margin: 10px 0px 0px 0px;
+        background-image: url(../images/logo_small.svg);
+        background-size: 100% auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 30px;
+        width: 86px;
+        @media screen and (max-width: 991px){
+            margin: 5px 0px 0px 0px;
+        }
+    }
+    .one,.two,.thr{
+        color: $color-white;
+        line-height: 30px;
+        width: 90px;
+        margin: 10px;
+        float: right;
+        text-align: center;
+        a{
+            color: $color-white;
+        }
+        @media screen and (max-width: 991px){
+            display: none;
+        }
+    }
+    #moblie_icon{
+        display: none;
+        @media screen and (max-width: 991px){
+            cursor: pointer;
+            background-image: url(../images/mobile_nav_icon.svg);
+            background-size: cover;
+            background-position: center;
+            display: inherit;
+            margin-top: 6px;
+            float: right;
+            vertical-align: middle;
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            :active{
+                background-image: url(../images/mobile_close_icon.svg);
+            }
+        }
+        
+    }
+    .dropdown-content{
+        display: none;
+        @media screen and (max-width: 991px){
+            text-align: center;
+            color: $color-white;
+            width: 100%;
+            white-space: normal;
+            .wh4{
+                margin: 20px 0px 20px 0px;
+                a{
+                    color: $color-white;
+                }
+            }
+        }
+    }
+}
+//-----------------------------footer
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 60px;
+    background-color: $color-black;
+    bottom: 0px;
+    .wh5{
+        color: $color-white;
+        text-align: center;
+    }
+}
+
+//-----------------------------首頁背景
+#screen_one{
+    position: relative;
+    background-image: url(../images/screenone_backimg.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;  
+    position: fixed;
+    z-index: -1;
+    .filter{
+        background-image: url(../images/screenone_texture.png);
+        background-repeat: repeat;
+        background-color: rgba(0,10,26,0.8);
+        width: 100%; 
+        height: 100%;
+    }
+
+}
+
+
+//-----------------------------首頁第一層
+.screen_two_mask{
+    .mouse_note{
+        background-image: url(../images/mouse_note.svg);
+        background-position: center;
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translateY(-50%); 
+        transform: translateX(-50%); 
+        width: 35px;
+        height: 113px;
+    }
+    .content{
+        padding: 0px 15px 0px 15px;
+        position: absolute;
+        top:50%;
+        width: 100%;
+    }
+    .logo{
+                background-image: url(../images/logo_big.svg);
+        background-size: 100% auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: auto;
+        height: 80px;
+        width: 230px;
+    }
+    .wh1{
+        margin-top: 10px;
+        color: $color-white;
+        width: 100%;
+        text-align: center;
+    }
+    .wh4{
+        margin-top: 10px;
+        color: $color-white;
+        width: 100%;
+        text-align: center;
+    }
+    .wbtn{
+        width: 220px;
+        margin: 40px auto 0px auto; 
+        background-color: $color-white;
+        .wh3 {
+            font-weight: 400;
+            line-height: 40px;
+            a{
+                color: inherit;
+                text-decoration:none;
+            }
+        }
+        :hover{
+            transition: 0.2s;
+            color: $color-white;
+            border-radius: 100px;
+            background-color: $color-blue;
+            a{
+                color: inherit;
+                text-decoration:none;
+            }
+        }
+    }
+}
+
+
+//-----------------------------首頁第二層
+.screen_two_content{
+    position: relative;
+    height: auto;
+    width: 100%;
+    background-color: $color-white;
+    z-index: 0;
+    padding: 100px 0px 0px 0px;
+        @media screen and (max-width: 991px){
+            padding: 20px 0px 20px 0px;
+        }
+    .whr{
+        margin: 70px 40% 70px 40%;
+        background-color: $color-gray;
+        height: 2px;
+            @media screen and (max-width: 991px){
+                margin: 50px 40% 50px 40%;
+            }
+        }
+    .info_one{
+        margin-top: 100px;
+        margin-bottom: 100px;
+            @media screen and (max-width: 991px){
+                margin-top: 20px;
+                margin-bottom: 50px;
+            }
+        .col-lg{
+            padding: 0px;
+            background-color:$color-white;
+            .one{
+                height: 100%;
+                width: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                    @media screen and (max-width: 991px){
+                        display: none;
+                    }
+                }
+            .two{
+                .icon{
+                    background-size: cover;
+                    margin: 30px auto 20px auto;
+                    height: 100px;
+                    width: 100px;
+                }
+                .wh2{
+                    text-align: center;
+                    width: auto;
+                    margin: 0px 15px 10px 15px;
+                    
+                }
+                .wh4{
+                    text-align: center;
+                    width: auto;
+                    min-height: 153px;
+                    padding: 0px 15% 0px 15%;
+                        @media screen and (max-width: 991px){
+                            min-height: 100px;
+                        }
+                }
+                .wbtn{
+                    width: 160px;
+                    border: solid 1px $color-blue;
+                    margin: 10px auto 30px;
+                    .wh3{
+                        font-weight: 400;
+                        line-height: 40px;
+                        color: $color-blue;
+                    }
+                    :hover{
+                        transition: 0.2s;
+                        color: $color-white;
+                        border-radius: 100px;
+                        background-color: $color-blue;
+                    }
+                }
+            }
+        } 
+    }
+}
+
+
+//-----------------------------首頁第三層
+.screen_thr_content{
+    padding: 70px 0px 60px 0px;
+    background-color: $color-ligthgray;
+        @media screen and (max-width: 991px){
+            padding-top: 20px;
+        }
+
+    .interduce{
+        .wh4{
+            padding: 0px 20% 0px 20%;
+            margin: auto;
+            text-align: center;
+                @media screen and (max-width: 991px){
+                padding: 0px 10% 0px 10%;
+                }
+            }
+        .container {
+            margin-top: 40px; 
+            margin-bottom: 60px;
+                @media screen and (max-width: 991px){
+                    margin-top: 20px; 
+                    margin-bottom: 30px;
+                }
+            }
+        
+    }
+    .job{
+        .detail{
+            justify-content: center;
+            white-space: nowrap;
+            align-items:center;
+            display: flex;
+            .jobtext:before{
+                content: "0"; 
+            }
+            .jobtext{
+            margin: 0px 10px 0px 10px;
+            color: $color-darkgray;
+            align-items:center;
+            display: flex;
+            letter-spacing: 4px;
+            font-size: 64px;
+            font-weight: 400;
+                @media screen and (max-width: 991px){
+                    margin: 0px 5px 0px 5px;
+                    font-size: 40px;
+                }
+            }
+        }
+        .wbtn{
+            width: 220px;
+            border: solid 1px $color-blue;
+            margin: 60px auto 0px;
+            .wh3{
+                font-weight: 400;
+                line-height: 40px;
+                color: $color-blue;
+            }
+            :hover{
+                transition: 0.2s;
+                color: $color-white;
+                border-radius: 100px;
+                background-color: $color-blue;
+            }
+        }
+    }
+}
+//-----------------------------首頁第四層
+.screen_four_content{
+    padding: 70px 0px 60px 0px;
+    background-color: $color-white;
+        @media screen and (max-width: 991px){
+            padding: 20px 0px 20px 0px;
+        }
+    .contact{
+        text-align: center;
+        margin: 60px 0px 0px 0px;
+            @media screen and (max-width: 991px){
+                margin: 30px 0px 0px 0px;
+            }
+        .detail{
+            flex-direction:column;
+            display: flex;
+            align-items:center;
+                @media screen and (max-width: 991px){
+                    margin: 0px 0px 30px 0px;
+                }
+            .icon{
+                background-size: cover;
+                height: 40px;
+                width: 40px;
+            }
+            .wh2{
+                margin: 30px 0px 20px 0px;
+                @media screen and (max-width: 991px){
+                    margin: 10px 0px 10px 0px;
+                }
+            }
+            .wh4{
+                max-height: 40px;
+            }
+        }
+    }
+}
